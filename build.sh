@@ -12,4 +12,4 @@ python manage.py collectstatic --no-input
 python manage.py migrate
 
 #Create superuser
-if [[ -z $CREATE_SUPERUSER ]]; then python manage.py createsuperuser; fi;
+if [[ $CREATE_SUPERUSER ]]; then python manage.py createsuperuser --no-input; fi;
